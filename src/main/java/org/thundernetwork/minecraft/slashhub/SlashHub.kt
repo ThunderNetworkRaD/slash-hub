@@ -1,22 +1,24 @@
-package org.thundernetwork.minecraft.slashhub;
+package org.thundernetwork.minecraft.slashhub
 
-import com.google.inject.Inject;
-import com.velocitypowered.api.event.proxy.ProxyInitializeEvent;
-import com.velocitypowered.api.event.Subscribe;
-import com.velocitypowered.api.plugin.Plugin;
-import org.slf4j.Logger;
+import com.google.inject.Inject
+import com.velocitypowered.api.event.Subscribe
+import com.velocitypowered.api.event.proxy.ProxyInitializeEvent
+import com.velocitypowered.api.plugin.Plugin
+import org.slf4j.Logger
 
 @Plugin(
-        id = "slashhub",
-        name = "Slash Hub",
-        version = BuildConstants.VERSION
+    id = "slashhub",
+    name = "Slash Hub",
+    version = BuildConstants.VERSION,
+    description = "Slash Hub",
+    authors = ["ThunderNetworkRaD", "KillerBossOriginal"]
 )
-public class SlashHub {
-
+class SlashHub {
     @Inject
-    private Logger logger;
+    private val logger: Logger? = null
 
     @Subscribe
-    public void onProxyInitialization(ProxyInitializeEvent event) {
+    fun onProxyInitialization(event: ProxyInitializeEvent?) {
+        logger?.info("ThunderNetwork's SlashHub Loaded!")
     }
 }
