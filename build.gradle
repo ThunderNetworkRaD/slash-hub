@@ -22,6 +22,7 @@ dependencies {
     annotationProcessor "com.velocitypowered:velocity-api:3.3.0-SNAPSHOT"
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
     kapt "com.velocitypowered:velocity-api:3.3.0-SNAPSHOT"
+    implementation("net.kyori:adventure-api:4.15.0")
 }
 
 def targetJavaVersion = 17

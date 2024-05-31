@@ -19,6 +19,9 @@ class SlashHub {
 
     @Subscribe
     fun onProxyInitialization(event: ProxyInitializeEvent?) {
-        logger?.info("ThunderNetwork's SlashHub Loaded!")
+        if (logger === null) {
+            throw NullPointerException("Logger is null")
+        }
+        logger.info("ThunderNetwork's SlashHub Loaded!")
     }
 }

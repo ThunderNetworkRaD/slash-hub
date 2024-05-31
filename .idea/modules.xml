@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/slashhub.main.iml" filepath="$PROJECT_DIR$/.idea/modules/slashhub.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/slashhub.test.iml" filepath="$PROJECT_DIR$/.idea/modules/slashhub.test.iml" />
     </modules>
   </component>
 </project>
